@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  </head>
+  <title>capital</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <head>
+      
+<body>
+    <div class="container">
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="title1">What is the capital of Italy?</h1>
+      </div>
+     
+    <section class="cards">
+      <article class="card card--Rome">
+        <div class="card__info-hover">
+        </div>
+
+        <div class="card__img" name="capital_chosen" value="Rome"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <h3>
+              <form action="/answer" method="POST">
+                <input type="hidden" name="question" value="capital">
+                <input type="hidden" name="answer" value="rome">
+                <button type="submit" class="btn btn-lg btn-danger btn-block"  name="capital_chosen" value="Rome" >Rome</button>
+            </h3>
+              </form>
+          </div>
+      </article>
+  
+
+      <article class="card card--Madrid">
+        <div class="card__info-hover">
+        </div>
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <h3>
+              <form action="/answer" method= 'POST'>
+                <input type="hidden" name="question" value="capital">
+                <input type="hidden" name="answer" value="madrid">
+                <button type="submit" class="btn btn-lg btn-warning btn-block" name="capital_chosen" value="Madrid" >Madrid</button>
+            </h3>
+              </form>
+          </div>
+      </article>  
+
+
+      <article class="card card--Paris">
+        <div class="card__info-hover">
+        </div>
+          <div class="card__img"></div>
+            <a href="#" class="card_link">
+              <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+              <h3>
+                <form action="/answer" method = 'POST'>
+                  <input type="hidden" name="question" value="capital">
+                  <input type="hidden" name="answer" value="paris">
+                  <button type="submit" class="btn btn-lg btn-info btn-block " name="capital_chosen" value="Paris"  >Paris</button>
+              </h3>
+                </form>  
+            </div>
+      </article>  
+    </section>
+
+
+
+
+  </body>
+  </html>
+
+
+ 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Welcome to game</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+     
+  </head>
+  <style>
+.btn-primary{margin-right: 2%;}
+  </style>
+    <body>
+
+            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 method="GET" class="display-4">Hello {{ user }} !</h1>
+                <h2 class="title1">Would you like to play a traveling game?</h2>
+            <div> <a href="question?question=capital" class="btn btn-primary btn-lg" >Yes</a><a href="payment" class="btn btn-primary btn-lg" >No</a>
+            </div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  </head>
+  <title>capital</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <head>
+      
+<body>
+    <div class="container">
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="title1">Which famous person comes from Italy?</h1>
+      </div>
+     
+    <section class="cards">
+      <article class="card card--SalvadorDali">
+        <div class="card__info-hover">
+        </div>
+
+        <div class="card__img" name="person_chosen" value="Salvador Dali"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <h3>
+              <form action="/answer" method="POST">
+                <input type="hidden" name="question" value="person">
+                <input type="hidden" name="answer" value="salvador dali">
+                <button type="submit" class="btn btn-lg btn-danger btn-block"  name="person_chosen" value="Salvador Dali" >Salvador Dali</button>
+            </h3>
+              </form>
+          </div>
+      </article>
+      
+      <article class="card card--Descartes">
+            <div class="card__info-hover">
+            </div>
+              <div class="card__img"></div>
+                <a href="#" class="card_link">
+                  <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                  <h3>
+                    <form action="/answer" method="POST">
+                      <input type="hidden" name="question" value="person">
+                      <input type="hidden" name="answer" value="descartes">    
+                      <button type="submit" class="btn btn-lg btn-info btn-block " name="person_chosen" value="Descartes" >Descartes</button>
+                  </h3>
+                    </form>  
+                </div>
+          </article>  
+
+      <article class="card card--LeonardoDaVinci">
+        <div class="card__info-hover">
+        </div>
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <h3>
+              <form action="/answer" method="POST">
+                      <input type="hidden" name="question" value="person">
+                      <input type="hidden" name="answer" value="leonardo da vinci">   
+                <button type="submit" class="btn btn-lg btn-warning btn-block" name="person_chosen" value="Leonardo Da Vinci">Leonardo Da Vinci</button>
+            </h3>
+              </form>
+          </div>
+      </article> 
+  </body>
+  </html>

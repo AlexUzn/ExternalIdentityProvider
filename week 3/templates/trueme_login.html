@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>TrueMe Login Form</title>
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/trueme_login.css')}}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <figure class="logo">
+   <a href="">
+      <img src="https://goo.gl/qRq9Bq" alt="" class="logo__symbol">
+   </a>
+   <figcaption class="logo__text">Brussels<br>Airlines</figcaption>
+</figure>
+<label for="css-toggle" class="button">True Me Login</label>
+
+<input type="checkbox" id="css-toggle" name="css-toggle">  
+<div class="form-wrapper">
+   <form action="" method="post"> 
+      <h3 style="animation-delay: 0.4s" class="form__header folding--effect" >True Me</h3>    
+      <ul class="bd">
+         <li style="animation-delay: 0.6s" class="form__item folding--effect">
+            <input type="text" id="number" placeholder="Phone number" name='number' value="{{request.form.username }}">
+         </li>
+         <li style="animation-delay: 0.8s" class="form__item folding--effect">
+            <input type="text" id="password" placeholder="Password" name='password' value="{{request.form.password }}">
+         </li>
+         <li style="animation-delay: 1.0s" class="form__item folding--effect">
+            <input type="submit" id="submit" value="Login" action="">
+         </li>
+         <li style="animation-delay: 1.2s" class="form__item folding--effect">
+            <a class="form__link--text" href="">Forgot password?</a>
+            <a class="form__link--text" href="/register">Register here!</a>
+         </li>   
+      </ul>
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }} or <a href="register.html">register.</a>
+      {% endif %}
+
+</div>
+<label for="css-toggle" class="overlay"></label>
+
+    <script  src="js/index.js"></script>
+
+</body>
+
+</html>

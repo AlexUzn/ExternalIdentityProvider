@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+.titleblk {
+  text-align: center;
+  width: auto;
+  display: flex;
+  display: -webkit-flex;
+  display: block;
+  margin: 2px;
+}
+
+.title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.title2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body, html {
+   font-family: 'Roboto Slab', serif;
+    margin: 0;
+  width: 100%;
+height: 100%;
+    padding: 0;
+  }
+
+body {
+  background-color: #D2DBDD;
+  background-image: url("https://wallpapersite.com/images/pages/pic_w/9954.jpg");
+  backface-visibility: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.col-md-4 {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: auto;
+}
+
+.btn-warning {
+  color: white;
+}
+
+.btn-warning:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.btn {
+  text-align: center;
+  color: white;
+}
+
+.card--Italy .card__img, .card--Italy .card__img--hover {
+    background-image: url('https://www.bostonglobe.com/rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/rock--left.png');
+}
+
+.card--Spain .card__img, .card--Spain .card__img--hover {
+    background-image: url('https://www.bostonglobe.com/rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/paper--left.png');
+}
+
+.card--France .card__img, .card--France .card__img--hover {
+  background-image: url('https://www.bostonglobe.com/rw/Boston/2011-2020/WebGraphics/Metro/BostonGlobe.com/2018/05/rockpaperscissors/assets/scissors--left.png');
+}
+
+.card--Rome .card__img, .card--Rome .card__img--hover {
+  background-image: url('https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg');
+}
+
+.card--Madrid .card__img, .card--Madrid .card__img--hover {
+  background-image: url('https://www.budandbreakfast.com/wp-content/uploads/job-manager-uploads/featured_image/2017/12/madrid1251_75151.jpg');
+}
+
+.card--Paris .card__img, .card--Paris .card__img--hover {
+background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/08/13/14/paris-summer.jpg');
+}
+
+.card--Pizza .card__img, .card--Pizza .card__img--hover {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg');
+}
+
+.card--Tartiflette .card__img, .card--Tartiflette .card__img--hover {
+  background-image: url('https://assets.afcdn.com/recipe/20160401/38946_w1024h768c1cx2690cy1793.jpg');
+}
+
+.card--Paella .card__img, .card--Paella .card__img--hover {
+background-image: url('https://food-images.files.bbci.co.uk/food/recipes/paella_7100_16x9.jpg');
+}
+
+.card--SalvadorDali .card__img, .card--SalvadorDali .card__img--hover {
+  background-image: url('https://images.fineartamerica.com/images-medium-large-5/salvador-dali-portrait-travis-knight.jpg');
+}
+
+.card--Descartes .card__img, .card--Descartes .card__img--hover {
+  background-image: url('https://az333959.vo.msecnd.net/images-6/portrait-of-rene-descartes-1595-1650-copy-frans-hals-13e10e04.jpg');
+}
+
+.card--LeonardoDaVinci .card__img, .card--LeonardoDaVinci .card__img--hover {
+background-image: url('https://www.biography.com/.image/t_share/MTIwNjA4NjMzMzgzMDYxMDA0/renaissance-man.jpg');
+}
+
+.card--sagrada_familia .card__img, .card--sagrada_familia .card__img--hover {
+  background-image: url('https://aws-tiqets-cdn.imgix.net/images/content/78d4eabeeaa743b5b29d71dcb752a32f.jpg?auto=format&fit=crop&ixlib=python-1.1.2&q=25&s=33e4a4bda39ad98fc02dcffd8735de31&w=400&h=320&dpr=2.625');
+}
+
+.card--eiffel_tower .card__img, .card--eiffel_tower .card__img--hover {
+  background-image: url('https://cdn.pariscityvision.com/media/catalog/product/cache/1/image/755x433/9df78eab33525d08d6e5fb8d27136e95/p/f/pf-01-eiffel-tower_3.jpg');
+}
+
+.card--leaning_tower_of_pisa .card__img, .card--leaning_tower_of_pisa .card__img--hover {
+background-image: url('https://goodtravel.ge/uploads/tours/671/620.jpg');
+}
+
+.card--ciao .card__img, .card--ciao .card__img--hover {
+  background-image: url('https://st3.depositphotos.com/5269571/12517/v/950/depositphotos_125175688-stock-illustration-ciao-italian-greeting.jpg');
+}
+
+.card--bonjour .card__img, .card--bonjour .card__img--hover {
+  background-image: url('https://st2.depositphotos.com/2066835/8700/v/950/depositphotos_87004726-stock-illustration-hello-card-in-french-bonjour.jpg');
+}
+
+.card--hola .card__img, .card--hola .card__img--hover {
+background-image: url('https://static.wixstatic.com/media/43be81_9316e0f433a1410fa305a86e749389f2.png');
+}
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+
+.card_choice {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+    color: white;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+.box {
+  width: 500px;
+  height: 300px;
+  left: -webkit-calc( 50% - 250px );
+  top: 20%;
+  position: absolute;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  transition: box-shadow .3s ease;
+}
+.box:active {
+  cursor: move;
+  -moz-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+.box .content {
+  margin: auto;
+}
+
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+
+.quote-card {
+  background: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 2 4px 6px rgba(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  opacity: 0.6;
+  text-align: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.quote-card p {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+  text-align: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.quote-card cite {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+  align-content: center;
+  margin: 10px auto;
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: -25px;
+  left: 5px;
+  font-size: 5em;
+  color: rgba(255, 255, 255);
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -70px;
+  line-height: 90px;
+  right: 10px;
+  font-size: 10em;
+  color: rgba(255, 255, 255);
+  font-weight: normal;
+  text-align: center;
+}
+.quote-card.dark-card {
+  background: rgb(33, 37, 43);
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+  text-align: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.quote-card.dark-card:before, .quote-card.dark-card:after {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.ribbon-banner {
+  display: table;
+  max-width: 85%;
+  font-size: 35px;
+  line-height: 1.1;
+  position: relative;
+  background: #007bff;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkyOTI5MiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjODA4MDgwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOTI5MjkyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #007bff), color-stop(50%, #009bff), color-stop(100%, #007bff));
+  background: -moz-linear-gradient(left, #007bff, #009bff, #007bff);
+  background: -webkit-linear-gradient(left, #007bff, #009bff, #007bff);
+  background: linear-gradient(to right, #007bff, #009bff, #007bff);
+  color: #fff;
+  text-align: center;
+  padding: .3em 1em .3em;
+  margin: .75em auto 1.25em;
+  text-shadow: 0 1px 3px #6c6c6c;
+}
+.ribbon-banner:before, .ribbon-banner:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.35em;
+  border-width: .85em;
+  border-style: solid;
+  border-color: #007bff;
+  z-index: -1;
+}
+.ribbon-banner:before {
+  left: -1em;
+  border-right-width: 1.5em;
+  border-left-width: 0.5em;
+  border-left-color: transparent;
+}
+.ribbon-banner:after {
+  right: -1em;
+  border-left-width: 1.5em;
+  border-right-width: 0.5em;
+  border-right-color: transparent;
+}
+.ribbon-banner span:before,
+.ribbon-banner span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #005bff transparent transparent transparent;
+  bottom: -0.35em;
+}
+.ribbon-banner span:before {
+  left: 0;
+  border-width: 0.35em 0 0 1em;
+}
+.ribbon-banner span:after {
+  right: 0;
+  border-width: 0.35em 1em 0 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register Form</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css')}}">
+  <style>
+      body {
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15891/airplane.jpg) center no-repeat;
+        color:white;
+      }
+  </style>
+</head>
+
+<body>
+
+   <!-- <h1>Register</h1>
+    {% from "includes/_formhelpers.html" import render_field %}
+    <form method="POST" action="http://127.0.0.1:5000/ba_login?redirecturl={{redirecturl}}&client={{client}}">
+      <div class="form-group">
+        {{render_field(form.number, class_="form-control")}}
+      <div class="form-group">
+        {{render_field(form.password, class_="form-control")}}
+      </div>
+      <div class="form-group">
+        {{render_field(form.confirm, class_="form-control")}}
+      </div>
+      <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+    </form> -->
+
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          </div> 
+      <div class="col-md-4 col-md-offset-4"> 
+        <div class="panel panel-default"> 
+          <div class="panel-heading">
+              <h3 class="panel-title">Register to TrueMe</h3>
+            </div>
+              <div class="panel-body">
+                <form accept-charset="UTF-8" role="form" method="POST" action="/register">
+                        <fieldset>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Enter your name" name="name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Enter your surname" name="surname" type="text" required>
+                </div>
+                <!-- <div class="form-group"> -->
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">    
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country number</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" value="+213">Algieria</a>
+                      <a class="dropdown-item" href="#" value="+376">Andorra</a>
+                      <a class="dropdown-item" href="#" value="+244">Angola</a>
+                      <a class="dropdown-item" href="#" value="+32">Belgium</a>
+                      <a class="dropdown-item" href="#" value="+48">Poland</a>
+                      <a class="dropdown-item" href="#" value="+44">UK</a>
+                      <a class="dropdown-item" href="#" value="+1">USA</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                  <input class="form-control" aria-label="Text input with dropdown button" placeholder="Enter your phone number" name="number" type="tel" pattern="^\d{9}$" required>
+                </div>
+                    <!-- <input class="form-control" placeholder="Enter your phone number" name="phone" type="tel" pattern="^\d{9}$" required> -->
+                <!-- </div> -->
+                <div class="form-group">
+                    <input class="form-control" placeholder="Enter your e-mail" name="email" type="email" required>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Enter your password" name="password" type="password" value="" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Confirm your password" name="confirm" type="password" value="" required>
+                </div>  
+                    </div>
+                  <input class="btn btn-lg btn-danger btn-block" type="submit" value="Register">
+                </fieldset>
+                  </form>
+                          <hr/>
+                      <div class="col-md-4 col-md-offset-4">
+                          <div class="dropdown">
+                            </div>
+        </div>
+         </div> 
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  </head>
+  <title>food</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+  <head>
+      
+<body>
+    <div class="container">
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+          <h1 class="title1">What is the most famous food of Italy?</h1>
+      </div>
+     
+    <section class="cards">
+      <article class="card card--Pizza">
+        <div class="card__info-hover">
+        </div>
+
+        <div class="card__img" name="food_chosen" value="Pizza"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <h3>
+              <form action="/answer" method="POST">
+                <input type="hidden" name="question" value="food">
+                <input type="hidden" name="answer" value="pizza">
+                <button type="submit" class="btn btn-lg btn-danger btn-block"  name="food_chosen" value="Pizza" >Pizza</button>
+            </h3>
+              </form>
+          </div>
+      </article>
+
+      <article class="card card--Tartiflette">
+            <div class="card__info-hover">
+            </div>
+              <div class="card__img"></div>
+                <a href="#" class="card_link">
+                  <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                  <h3>
+                    <form action="/answer" method="POST">
+                      <input type="hidden" name="question" value="food">
+                      <input type="hidden" name="answer" value="tartiflette">
+                      <button type="submit" class="btn btn-lg btn-info btn-block " name="food_chosen" value="Tartiflette" >Tartiflette</button>
+                  </h3>
+                    </form>  
+                </div>
+          </article>  
+
+      <article class="card card--Paella">
+        <div class="card__info-hover">
+        </div>
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <h3>
+              <form action="/answer" method="POST" >
+                <input type="hidden" name="question" value="food">
+                <input type="hidden" name="answer" value="paella">
+                <button type="submit" class="btn btn-lg btn-warning btn-block" name="food_chosen" value="Paella">Paella</button>
+            </h3>
+              </form>
+          </div>
+      </article>  
+    </section>
+  </body>
+  </html>
